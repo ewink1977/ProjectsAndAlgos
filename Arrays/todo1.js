@@ -69,3 +69,18 @@ function swapPairs(arr) {
 }
 
 swapPairs(arrayThree)
+
+duplicatedArray = [1,2,2,2,3,4,5,5,5,5,5,6,7,7,7,8,9,9,9]
+
+console.log('++++++ REMOVE DUPLICATES ++++++')
+function removeDuplicates(arr) {
+    for(var i = 0; i < arr.length; i++) {
+        while(arr[i] === arr[i + 1]) {
+            var idx = i + 1
+            removeAt(arr, idx)
+        }
+    }
+    console.log(arr)
+}
+
+removeDuplicates(duplicatedArray)
