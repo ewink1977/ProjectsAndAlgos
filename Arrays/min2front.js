@@ -18,11 +18,9 @@ function minToFront(arr) {
     }
     arr[0] = minNum;
 
-    console.log(arr);
+    return arr;
 }
 
-minToFront(dojoArray)
-
-minToFront(dojoTest1)
-
-minToFront(dojoTest2)
+console.log(minToFront(dojoArray))
+console.log(minToFront(dojoTest1))
+console.log(minToFront(dojoTest2))
