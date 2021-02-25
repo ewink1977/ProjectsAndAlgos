@@ -18,13 +18,22 @@ class SLL {
 
     contains(val) {
         let valueFound = false, current = this.head
-        while(current != null) {
+        while(current) {
             if(current.value === val) {
                 valueFound = true
             }
             current = current.next
         }
         console.log(valueFound)
+    }
+
+    length() {
+        let runner = this.head, counter = 0
+        while(runner) {
+            counter++
+            runner = runner.next
+        }
+        console.log(counter)
     }
 }
 
@@ -35,3 +44,5 @@ mySLL.head = nodeA;
 console.log('------ CONTAINS VALUE ------')
 mySLL.contains(69)
 mySLL.contains(12)
+console.log('------ LENGTH ------')
+mySLL.length()
