@@ -35,6 +35,16 @@ class SLL {
         }
         console.log(counter)
     }
+
+    display() {
+        let runner = this.head, display = "The values in the node are: ", newlist = []
+        while(runner) {
+            newlist.push(runner.value)
+            runner = runner.next
+        }
+        let finalDisplay = display.concat(newlist.join(", "), ".")
+        console.log(finalDisplay)
+    }
 }
 
 let mySLL = new SLL;
@@ -46,3 +56,5 @@ mySLL.contains(69)
 mySLL.contains(12)
 console.log('------ LENGTH ------')
 mySLL.length()
+console.log('------ DISPLAY ------')
+mySLL.display()
