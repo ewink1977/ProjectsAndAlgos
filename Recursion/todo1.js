@@ -17,22 +17,6 @@ function recursiveFactorial(num) {
     return 1
 }
 
-matrixArray = [
-    [1,2,3,3,4],
-    [1,3,3,4,2],
-    [2,2,3,3,1],
-    [3,2,3,1,1],
-    [3,1,3,3,2],
-]
-
-// function floodFill(arr, startX, startY, newColor) {
-//     // newMatrix = []
-//     console.log(arr[startY][startX])
-//     while(startX >= 0) {
-        
-//     }
-// }
-
 
 console.log('------ RECURSIVE SIGMA ------')
 console.log(recursiveSigma(2.5))
@@ -42,5 +26,3 @@ console.log('------ RECURSIVE FACTORIAL ------')
 console.log(recursiveFactorial(3))
 console.log(recursiveFactorial(6.5))
 console.log(recursiveFactorial(14))
-console.log('------ FLOOD FILL ------')
-// console.log(floodFill(matrixArray, 2, 2, 7))
